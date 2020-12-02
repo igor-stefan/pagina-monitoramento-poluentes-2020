@@ -1,0 +1,38 @@
+.card {
+  width:220px;
+  display: block;
+  margin: 10px auto 10px;
+  transition: .25s; 
+}
+
+.indicative {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  background-color:#6A5ACD; 
+}
+
+.button-a{
+  background-color: #ffffff; /* Green #4CAF50 */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.button-a:hover {
+  opacity: 1
+}
+
+.cardHeader {
+  background-color: #fffa60;
+}
