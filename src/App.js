@@ -69,7 +69,7 @@ class App extends Component{
   
  async componentDidMount() {
    // cria a conexão persistente
-   var source = new EventSource('http://localhost:3000/startsend');
+   var source = new EventSource('http://still-earth-23257/startsend');
    // define um evento que é executado quando o servidor envia uma mensagem
   source.onmessage =  event => {
     console.log("DADOS RECEBIDOS APÓS NOVO POST NO SERVIDOR SOURCE1");
@@ -86,7 +86,7 @@ class App extends Component{
     console.log("OCORREU ALGUM ERRO, VERIFIQUE A COMUNICAÇÃO SOURCE1");
   };
   // GET request using fetch with async/await
-  let source2 = new EventSource('http://localhost:3000/minmaxmed');
+  let source2 = new EventSource('http://still-earth-23257/minmaxmed');
   source2.onmessage =  event => {
     console.log("DADOS RECEBIDOS APÓS BUSCA NO BANCO DE DADOS SOURCE2");
     let k = event.data;
