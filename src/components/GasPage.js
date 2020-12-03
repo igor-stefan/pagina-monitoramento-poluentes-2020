@@ -110,7 +110,7 @@ const GasPage = ({ppmValue, ugm3Value, opt, seriesUpdate, id, vetorMMM, poluente
             a = ppmValue;
             b = ugm3Value;
           }
-          console.log("i = ", i, " a = ", a, " b = ", b);
+          /* console.log("i = ", i, " a = ", a, " b = ", b); */
             return(
             <CardsForGas
                 key = {i} 

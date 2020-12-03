@@ -67,11 +67,11 @@ class App extends Component{
     this.setState({minMaxMed: obj})
   }
   
-  componentDidMount() {
+  async componentDidMount() {
    // cria a conexão persistente
-   var source = new EventSource('https://still-earth-23257.herokuapp.com/startsend');
+   this.source = new EventSource('http://localhost:3000/startsend');
    // define um evento que é executado quando o servidor envia uma mensagem
-  source.onmessage =  event => {
+  this.source.onmessage =  event => {
     console.log("DADOS RECEBIDOS APÓS NOVO POST NO SERVIDOR SOURCE1");
     let k = event.data;
     k = JSON.parse(k);
@@ -79,31 +79,33 @@ class App extends Component{
     this.alterar_padrao(k);
     this.alterar_opcoes_graph(k);
   }
-  source.onopen = function() {
+  this.source.onopen = function() {
     console.log("CONEXAO INICIADA SOURCE1");
   };
-  source.onerror = function() {
+  this.source.onerror = function() {
     console.log("OCORREU ALGUM ERRO, VERIFIQUE A COMUNICAÇÃO SOURCE1");
   };
   // GET request using fetch with async/await
-  let source2 = new EventSource('https://still-earth-23257.herokuapp.com/minmaxmed');
-  source2.onmessage =  event => {
+  this.source2 = new EventSource('http://localhost:3000/minmaxmed');
+  this.source2.onmessage =  event => {
     console.log("DADOS RECEBIDOS APÓS BUSCA NO BANCO DE DADOS SOURCE2");
     let k = event.data;
     k = JSON.parse(k);
     console.log(JSON.parse(event.data));
     this.alterar_min_max_med(k);
   }
-  source2.onopen = function() {
+  this.source2.onopen = function() {
     console.log("CONEXAO INICIADA SOURCE2");
   };
-  source2.onerror = function() {
+  this.source2.onerror = function() {
     console.log("OCORREU ALGUM ERRO, VERIFIQUE A COMUNICAÇÃO SOURCE2");
   };
 }
 
 componentWillUnmount() {
   this.onRouteChangeThrottled.cancel();
+  this.source.close();
+  this.source2.close();
 }
   render(){
     return (
