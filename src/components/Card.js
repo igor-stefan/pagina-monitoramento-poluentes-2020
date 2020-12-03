@@ -4,7 +4,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
 const cor_background = (sit) => {
-  console.log("sit = ", sit);
+  // console.log("sit = ", sit);
   let estilos = {};
   switch(sit){
     case "BOM":
@@ -28,7 +28,7 @@ const cor_background = (sit) => {
       const indefinido = { backgroundColor: '#6A5ACD' };
       Object.assign(estilos, indefinido);
   }
-  console.log("estilos = ", estilos);
+  // console.log("estilos = ", estilos);
   return estilos;
 }
 

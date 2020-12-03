@@ -20,6 +20,7 @@ export let optionsCO = {
         align: 'middle',
         style: {
             color:'#000000',
+            fontSize:'14px'
         },
       },
       labels:{
@@ -42,6 +43,7 @@ export let optionsCO = {
         align: 'middle',
         style: {
           color:'#000000',
+          fontSize:'14px'
         },
       },
       labels:{
@@ -73,6 +75,7 @@ export let optionsCO = {
     series: [{
       color: '#c23d23',
       lineColor: '#c23d23',
+      type: 'area',
       name: 'CO',
       data: []
     }]
@@ -100,6 +103,7 @@ export let optionsCO = {
             align: 'middle',
             style: {
                 color:'#000000',
+                fontSize:'14px'
             },
         },
         labels:{
@@ -122,6 +126,7 @@ export let optionsCO = {
             align: 'middle',
             style: {
                 color:'#000000',
+                fontSize:'14px'
             },
         },
         labels:{
@@ -152,6 +157,7 @@ export let optionsCO = {
     },
     series: [{
         lineColor: '#1d82b8',
+        type: 'area',
         name: 'CO2',
         data: []
     }]
@@ -178,6 +184,7 @@ export let optionsCO = {
                     align: 'middle',
                     style: {
                         color:'#000000',
+                        fontSize:'14px'
                     },
                 },
                 labels:{
@@ -199,6 +206,7 @@ export let optionsCO = {
                     align: 'middle',
                     style: {
                         color:'#000000',
+                        fontSize:'14px'
                     },
                 },
                 labels:{
@@ -230,6 +238,7 @@ export let optionsCO = {
             series: [{
                 color:'#ffff80',
                 lineColor: '#ffff00',
+                type: 'area',
                 name: 'O3',
                 data: []
             }]
@@ -256,6 +265,7 @@ export let optionsCO = {
                     align: 'middle',
                     style: {
                         color:'#000000',
+                        fontSize:'14px'
                     },
                 },
                 labels:{
@@ -277,6 +287,7 @@ export let optionsCO = {
                     align: 'middle',
                     style: {
                         color:'#000000',
+                        fontSize:'14px'
                     },
                 },
                 labels:{
@@ -309,6 +320,7 @@ export let optionsCO = {
                 color: '#90ee90',
                 lineColor: '#00ff00',
                 name: 'NO2',
+                type: 'area',
                 data: []
             }]
   }
@@ -334,6 +346,7 @@ export let optionsCO = {
             align: 'middle',
             style: {
                 color:'#000000',
+                fontSize:'14px'
             },
         },
         labels:{
@@ -356,6 +369,7 @@ export let optionsCO = {
             align: 'middle',
             style: {
                 color:'#000000',
+                fontSize:'14px'
             },
         },
         labels:{
@@ -391,6 +405,7 @@ export let optionsCO = {
         marker:{
             fillCollor:'#000000',
         },
+        type: 'area',
         data: [],
     }]
   }

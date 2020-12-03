@@ -129,8 +129,8 @@ DEPENDENCES
   
   .page__custom-settings{
     --menuBackgroundColor: #505050;
-    --menuLinkColor: #fff;
-    --menuLinkColorUnactive:#c5ba18;
+    --menuLinkColor: #c5ba18;
+    --menuLinkColorUnactive:#fff;
     --menuLinkOutlineOffset: -.5rem; 
   }
   

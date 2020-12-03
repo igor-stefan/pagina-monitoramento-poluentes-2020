@@ -103,8 +103,8 @@ const GasPage = ({ppmValue, ugm3Value, opt, seriesUpdate, id, vetorMMM, poluente
         a.map((x, i) => {
           let a, b;
           if(i > 0){
-             a = vetorMMM[i - 1];
-             b = vetorMMM[i + 2];
+             a = vetorMMM[i - 1].toFixed(7);
+             b = vetorMMM[i + 2].toFixed(7);
           }
           else{
             a = ppmValue;
