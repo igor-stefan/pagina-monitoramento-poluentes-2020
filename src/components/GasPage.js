@@ -99,28 +99,26 @@ const GasPage = ({ppmValue, ugm3Value, opt, seriesUpdate, id, vetorMMM, poluente
       />
       </div>
     <div className = "AllCards" style = {{margin: '0px 10px 0px'}}>
-      {
-        a.map((x, i) => {
-          let c, b;
-          if(i > 0){
-             c = vetorMMM[i - 1].toFixed(7);
-             b = vetorMMM[i + 2].toFixed(7);
-          }
-          else{
-            c = ppmValue;
-            b = ugm3Value;
-          }
-          /* console.log("i = ", i, " a = ", a, " b = ", b); */
-            return(
-            <CardsForGas
-                key = {i} 
-                name = {x}
-                ppmValue = {c}
-                ugm3Value = {b}
-            />
-            )
-        })
-      }
+      <CardsForGas 
+                name = "Atual"
+                ppmValue = {ppmValue}
+                ugm3Value = {ugm3Value}
+      />
+      <CardsForGas
+                name = "Média"
+                ppmValue = {vetorMMM[2]}
+                ugm3Value = {vetorMMM[5]}
+      />
+      <CardsForGas
+                name = "Máximo"
+                ppmValue = {vetorMMM[1]}
+                ugm3Value = {vetorMMM[4]}
+        />
+      <CardsForGas
+                name = "Mínimo"
+                ppmValue = {vetorMMM[0]}
+                ugm3Value = {vetorMMM[3]}
+        />
       <div className = "card br3 mt1 mb1 bw2 mr1 mr1 pl1 pr1">
         <div className="bg-light-yellow w-100 br3 mb0 dib v-mid">
             <h3>Situação:</h3>
