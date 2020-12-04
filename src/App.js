@@ -67,7 +67,7 @@ class App extends Component{
     this.setState({minMaxMed: obj})
   }
   
-  async componentDidMount() {
+  componentDidMount() {
    // cria a conexão persistente
    this.source = new EventSource('http://still-earth-23257.herokuapp.com/startsend');
    // define um evento que é executado quando o servidor envia uma mensagem
