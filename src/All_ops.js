@@ -162,7 +162,7 @@ export let optionsCO = {
         dataLabels: [{
             format: '{value:%H:%M:%S}',
         }],
-        pointStart: new Date.now(),
+        pointStart: new Date(),
     },
     series: [{
         lineColor: '#1d82b8',
@@ -325,7 +325,7 @@ export let optionsCO = {
                         }
                     }
                 },
-                pointStart: new Date.now(),
+                pointStart: new Date(),
             },
             series: [{
                 color: '#90ee90',
