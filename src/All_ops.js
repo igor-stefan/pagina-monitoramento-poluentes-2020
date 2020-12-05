@@ -71,6 +71,7 @@ export let optionsCO = {
           }
         }
       },
+      pointStart: Date.now(),
     },
     series: [{
       color: '#c23d23',
@@ -93,7 +94,7 @@ export let optionsCO = {
         },
     },
     xAxis: {
-        type: 'int',
+        type: 'datetime',
         gridLineWidth: 1,
         gridLineDashStyle:'dash',
         gridLineColor: '#000000',
@@ -154,6 +155,7 @@ export let optionsCO = {
                 }
             }
         },
+        pointStart: Date.now(),
     },
     series: [{
         lineColor: '#1d82b8',
@@ -174,7 +176,7 @@ export let optionsCO = {
                 },
             },
             xAxis: {
-                type: 'int',
+                type: 'datetime',
                 gridLineWidth: 1,
                 gridLineDashStyle:'dash',
                 gridLineColor: '#000000',
@@ -234,6 +236,7 @@ export let optionsCO = {
                         }
                     }
                 },
+                pointStart: Date.now(),
             },           
             series: [{
                 color:'#ffff80',
@@ -255,7 +258,7 @@ export let optionsCO = {
                 },
             },
             xAxis: {
-                type: 'int',
+                type: 'datetime',
                 gridLineWidth: 1,
                 gridLineDashStyle:'dash',
                 gridLineColor: '#000000',
@@ -315,6 +318,7 @@ export let optionsCO = {
                         }
                     }
                 },
+                pointStart: Date.now(),
             },
             series: [{
                 color: '#90ee90',
@@ -336,7 +340,7 @@ export let optionsCO = {
         },
     },
     xAxis: {
-        type: 'int',
+        type: 'datetime',
         gridLineWidth: 1,
         gridLineDashStyle:'dash',
         gridLineColor: '#000000',
@@ -397,6 +401,7 @@ export let optionsCO = {
                 }
             }
         },
+        pointStart: Date.now(),
     },
     series: [{
         color: '#ffbc40',
