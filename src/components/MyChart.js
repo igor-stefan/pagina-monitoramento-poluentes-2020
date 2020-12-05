@@ -27,15 +27,13 @@ class LineChart extends Component{
     // console.log("state len = ", this.state.len, " new series len = ", this.props.newSeries.length);
     
     this.interval = setInterval(() => {
-      if(this.props.newSeries.length > 50)
-        this.props.newSeries.shift();
-      if(this.state.len <= this.props.newSeries.length){
+      if(this.state.len < this.props.newSeries.length){
           this.updateSeries();
           this.setState({
             len: this.props.newSeries.length
           })
       }    
-    }, 1500);
+    }, 1000);
     // console.log("id = ", this.props.id)
   }
 

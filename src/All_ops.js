@@ -10,7 +10,7 @@ export let optionsCO = {
     },
   
     xAxis: {
-      type: 'int',
+      type: 'datetime',
       gridLineWidth: 1,
       gridLineDashStyle:'dash',
       gridLineColor: '#000000',

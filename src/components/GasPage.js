@@ -106,18 +106,18 @@ const GasPage = ({ppmValue, ugm3Value, opt, seriesUpdate, id, vetorMMM, poluente
       />
       <CardsForGas
                 name = "Média"
-                ppmValue = {vetorMMM[2].toFixed(7)}
-                ugm3Value = {vetorMMM[5].toFixed(7)}
+                ppmValue = {vetorMMM[2].toFixed(5)}
+                ugm3Value = {vetorMMM[5].toFixed(5)}
       />
       <CardsForGas
                 name = "Máximo"
-                ppmValue = {vetorMMM[1].toFixed(7)}
-                ugm3Value = {vetorMMM[4].toFixed(7)}
+                ppmValue = {vetorMMM[1].toFixed(5)}
+                ugm3Value = {vetorMMM[4].toFixed(5)}
         />
       <CardsForGas
                 name = "Mínimo"
-                ppmValue = {vetorMMM[0].toFixed(7)}
-                ugm3Value = {vetorMMM[3].toFixed(7)}
+                ppmValue = {vetorMMM[0].toFixed(5)}
+                ugm3Value = {vetorMMM[3].toFixed(5)}
         />
       <div className = "card br3 mt1 mb1 bw2 mr1 mr1 pl1 pr1">
         <div className="bg-light-yellow w-100 br3 mb0 dib v-mid">
