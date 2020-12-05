@@ -62,6 +62,7 @@ export let optionsCO = {
     plotOptions: {
       series: {
         pointStart: Date.now(),
+        pointInterval: 8 * 1000,
         marker: {
           fillColor: '#000000',
           lineWidth: 0,
@@ -149,6 +150,7 @@ export let optionsCO = {
     plotOptions: {
         series: {
             pointStart: Date.now(),
+            pointInterval: 8 * 1000,
             marker: {
                 fillColor: '#000000',
                 lineWidth: 0,
@@ -233,6 +235,7 @@ export let optionsCO = {
             plotOptions: {
                 series: {
                     pointStart: Date.now(),
+                    pointInterval: 8 * 1000,
                     marker: {
                         fillColor: '#000000',
                         lineWidth: 0,
@@ -318,6 +321,7 @@ export let optionsCO = {
             plotOptions: {
                 series: {
                     pointStart: Date.now(),
+                    pointInterval: 8 * 1000,
                     marker: {
                         fillColor: '#000000',
                         lineWidth: 0,
@@ -404,6 +408,7 @@ export let optionsCO = {
     plotOptions: {
         series: {
             pointStart: Date.now(),
+            pointInterval: 8 * 1000,
             marker: {
                 fillColor: '#000000',
                 lineWidth: 0,
