@@ -15,7 +15,7 @@ export let optionsCO = {
       gridLineDashStyle:'dash',
       gridLineColor: '#000000',
       title:{
-        text: 'Amostra',
+        text: 'Tempo',
         margin: 15,
         align: 'middle',
         style: {
@@ -103,7 +103,7 @@ export let optionsCO = {
         gridLineDashStyle:'dash',
         gridLineColor: '#000000',
         title:{
-            text: 'Amostra',
+            text: 'Tempo',
             margin: 15,
             align: 'middle',
             style: {
@@ -189,7 +189,7 @@ export let optionsCO = {
                 gridLineDashStyle:'dash',
                 gridLineColor: '#000000',
                 title:{
-                    text: 'Amostra',
+                    text: 'Tempo',
                     margin: 15,
                     align: 'middle',
                     style: {
@@ -275,7 +275,7 @@ export let optionsCO = {
                 gridLineDashStyle:'dash',
                 gridLineColor: '#000000',
                 title:{
-                    text: 'Amostra',
+                    text: 'Tempo',
                     margin: 15,
                     align: 'middle',
                     style: {
@@ -361,7 +361,7 @@ export let optionsCO = {
         gridLineDashStyle:'dash',
         gridLineColor: '#000000',
         title:{
-            text: 'Amostra',
+            text: 'Tempo',
             margin: 15,
             align: 'middle',
             style: {
