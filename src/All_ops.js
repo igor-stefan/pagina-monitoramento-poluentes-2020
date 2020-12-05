@@ -112,7 +112,11 @@ export let optionsCO = {
                 {
                 color:'#000000',
                 fontSize:'12px',
-                }
+                },
+                format: '{value:%H:%M:%S}',
+                rotation: 45,
+                align: 'left'
+                
         },
         lineColor:'black',
         minTickInterval: 1,
@@ -155,7 +159,10 @@ export let optionsCO = {
                 }
             }
         },
-        pointStart: Date.now(),
+        dataLabels: [{
+            format: '{value:%H:%M:%S}',
+        }],
+        pointStart: new Date.now(),
     },
     series: [{
         lineColor: '#1d82b8',
@@ -318,7 +325,7 @@ export let optionsCO = {
                         }
                     }
                 },
-                pointStart: Date.now(),
+                pointStart: new Date.now(),
             },
             series: [{
                 color: '#90ee90',
@@ -407,9 +414,6 @@ export let optionsCO = {
         color: '#ffbc40',
         lineColor: '#ffa500',
         name: 'SO2',
-        marker:{
-            fillCollor:'#000000',
-        },
         type: 'area',
         data: [],
     }]
