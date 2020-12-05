@@ -28,7 +28,10 @@ export let optionsCO = {
           {
             color:'#000000',
             fontSize:'12px',
-          }
+          },
+          rotation: 45,
+          align: 'left',
+          format: '{value:%H:%M:%S}'
       },
       lineColor:'black',
       minTickInterval: 1,
@@ -58,6 +61,7 @@ export let optionsCO = {
     },
     plotOptions: {
       series: {
+        pointStart: Date.now(),
         marker: {
           fillColor: '#000000',
           lineWidth: 0,
@@ -71,7 +75,6 @@ export let optionsCO = {
           }
         }
       },
-      pointStart: Date.now(),
     },
     series: [{
       color: '#c23d23',
@@ -113,10 +116,9 @@ export let optionsCO = {
                 color:'#000000',
                 fontSize:'12px',
                 },
-                format: '{value:%H:%M:%S}',
                 rotation: 45,
-                align: 'left'
-                
+                align: 'left',
+                format: '{value:%H:%M:%S}'
         },
         lineColor:'black',
         minTickInterval: 1,
@@ -146,6 +148,7 @@ export let optionsCO = {
     },
     plotOptions: {
         series: {
+            pointStart: Date.now(),
             marker: {
                 fillColor: '#000000',
                 lineWidth: 0,
@@ -159,10 +162,6 @@ export let optionsCO = {
                 }
             }
         },
-        dataLabels: [{
-            format: '{value:%H:%M:%S}',
-        }],
-        pointStart: new Date(),
     },
     series: [{
         lineColor: '#1d82b8',
@@ -201,7 +200,10 @@ export let optionsCO = {
                         {
                         color:'#000000',
                         fontSize:'12px',
-                        }
+                        },
+                        rotation: 45,
+                        align: 'left',
+                        format: '{value:%H:%M:%S}'
                 },
                 lineColor:'black',
                 minTickInterval: 1,
@@ -230,6 +232,7 @@ export let optionsCO = {
             },
             plotOptions: {
                 series: {
+                    pointStart: Date.now(),
                     marker: {
                         fillColor: '#000000',
                         lineWidth: 0,
@@ -241,9 +244,8 @@ export let optionsCO = {
                                 lineColor:'#000000'
                             },
                         }
-                    }
+                    },
                 },
-                pointStart: Date.now(),
             },           
             series: [{
                 color:'#ffff80',
@@ -283,7 +285,10 @@ export let optionsCO = {
                         {
                         color:'#000000',
                         fontSize:'12px',
-                        }
+                        },
+                        rotation: 45,
+                        align: 'left',
+                        format: '{value:%H:%M:%S}'
                 },
                 lineColor:'black',
                 minTickInterval: 1,
@@ -312,6 +317,7 @@ export let optionsCO = {
             },
             plotOptions: {
                 series: {
+                    pointStart: Date.now(),
                     marker: {
                         fillColor: '#000000',
                         lineWidth: 0,
@@ -325,7 +331,6 @@ export let optionsCO = {
                         }
                     }
                 },
-                pointStart: new Date(),
             },
             series: [{
                 color: '#90ee90',
@@ -365,7 +370,10 @@ export let optionsCO = {
                 {
                 color:'#000000',
                 fontSize:'12px',
-                }
+                },
+                rotation: 45,
+                align: 'left',
+                format: '{value:%H:%M:%S}'
         },
         lineColor:'black',
         minTickInterval: 1,
@@ -395,6 +403,7 @@ export let optionsCO = {
     },
     plotOptions: {
         series: {
+            pointStart: Date.now(),
             marker: {
                 fillColor: '#000000',
                 lineWidth: 0,
@@ -408,7 +417,6 @@ export let optionsCO = {
                 }
             }
         },
-        pointStart: Date.now(),
     },
     series: [{
         color: '#ffbc40',
